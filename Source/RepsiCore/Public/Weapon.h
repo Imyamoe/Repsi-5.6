@@ -25,6 +25,12 @@ struct FWeaponFirePacket
 	/** World-space surface normal of the hit: if zero, no hit occurred. */
 	UPROPERTY()
 	FVector_NetQuantizeNormal ImpactNormal;
+
+	FWeaponFirePacket()
+	{
+		ServerFireTime = 0.f;
+		bCausedDamage = false;
+	}
 };
 
 UCLASS()

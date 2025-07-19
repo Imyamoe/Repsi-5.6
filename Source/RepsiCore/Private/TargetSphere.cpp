@@ -7,6 +7,8 @@
 #include "Materials/MaterialInterface.h"
 #include "Components/SceneComponent.h"
 #include "Components/StaticMeshComponent.h"
+#include "GameFramework/DamageType.h" // Add this include for FPointDamageEvent
+#include "Engine/DamageEvents.h"      // Include this header for FPointDamageEvent
 
 #include "DamageType_WeaponFire.h"
 #include "RepsiPawn.h"
